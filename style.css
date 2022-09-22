@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cover_page{
+    background-color: #fff;
+    color: black;
+    padding: 0 0 0 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo_bar{
+     display: flex;
+     justify-content: space-between;
+     height: 65px;
+     background-color: lightyellow;
+     align-items: center;
+}
+
+.logo{
+    padding-left: 20px;
+    color: gray;
+}
+
+.face{
+    width: 30px;
+    clip-path: circle();
+}
+
+.image{
+    display:flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.image i{
+    padding-right: 20px;
+    font-size: large;
+}
+
+.profile_display{
+    display: flex;
+}
+
+.profile_display{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.profile_display .menu_items i{
+    color: purple;
+}
+
+.customer_template{
+    background-color: lightgray;
+}
+
+.welcome_dashboard{
+    color: gray;
+    line-height: 2rem;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.welcome_dashboard p{
+    font-size: smaller;
+}
+
+.total_customers{
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.box_description{
+    background-color: beige;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+    padding: 20px 10px 5px 5px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 110px;
+}
+
+.box_description i{
+    color: purple;
+}
+
+.total h3{
+    display: block;
+}
+
+.total .colored{
+    color: purple;
+    font-size: x-small;
+    line-height: 1rem;
+}
+
+.box_description > div{
+     display: flex;
+}
+
+
+.outer-line{
+    height:4px;
+    width:90%;
+    background: #DCDCDC;
+    border-radius: 2.5px;
+    margin-top:10px;
+}
+.inner-line{
+    background: #775DA6;
+    width:50%;
+    height:4px;
+
+}
+
+.customer_list{
+    padding: 20px 40px 0 15px;
+}
+
+.customer_list h2{
+    color: purple;
+    padding-bottom: 20px;
+}
+
+th{
+    text-align: left;
+}
+
+th, td{
+    padding: 10px 30px 10px 30px;
+    font-size: smaller;
+    font-weight: 600px;
+    border-bottom: 1px solid gray;
+}
+
+.input{
+    display: flex;
+}
+
+.input p{
+    font-size: smaller;
+    padding-left: 8px;
+}
+
+.red_warning{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.red_warning > i{
+    color: #6B6C7E;
+ }
+ .red_warning a{
+     text-decoration:none;
+     font-size: 14px;
+     color: #DA443D;
+     font-weight: 600;
+     background: #FFFFFF;
+    border: 1px solid #DA443D;
+    border-radius: 2px;
+    padding:5px 20px;
+    white-space: nowrap;
+ }
+
+.menu_type{
+    color: gray;
+    width: 320px;
+    padding-right: 30px;
+}
+/* 
+.menu_type .first_option{
+    padding: 20px 35px 20px 50px;
+    background-color: purple;
+    border-radius: 20px 4px 4px 4px;
+    font-size: x-small;
+    color: gray;
+    margin-top: 40px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.other_options i{
+    margin-right: 15px;
+}
+
+.first_option a:hover{
+    background-color: white;
+    color: purple;
+}
+
+.menu_type .other_options{
+    padding: 20px 35px 20px 20px;
+    font-size: x-small;
+    color: gray;
+    background-color: beige;
+    margin: 12px;
+    border-radius: 20px 4px 4px 4px;
+    border-right: none;
+}
+
+h2 a{
+    list-style-type: none;
+}
+*/
+
+.profile_display .menu_items{
+    margin-top: 40px;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile_display .menu_items li{
+        list-style: none;
+        padding:15px 0;
+        transition: 0.3s ease-in;
+        background: rgba(204, 188, 252, 0.15);
+        border-radius: 16px 0px 0px 0px;
+        margin:10px 0;
+}
+
+.profile_display .menu_items li:hover{
+    background:var(--global--color-primary);
+    cursor: pointer;
+}
+.profile_display .menu_items li:nth-child(1){
+    background-color: var(--global--color-primary);
+}
+   
+
+.profile_display .menu_items li i{
+    color:var(--global--color-primary);
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px; 
+
+}
+.profile_display .menu_items li:hover i,
+.profile_display .menu_items li:hover a{
+    color:#f3f4f6;
+}
+.profile_display .menu_items li a {
+    text-decoration: none;
+    color:rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.3s ease-in;
+}
